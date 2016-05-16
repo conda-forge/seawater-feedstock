@@ -5,7 +5,7 @@ Home: http://pypi.python.org/pypi/seawater/
 
 Package license: MIT License
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Seawater Library for Python
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/seawater-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/seawater-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/seawater-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/seawater-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/seawater-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/seawater-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/seawater/badges/version.svg)](https://anaconda.org/conda-forge/seawater)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/seawater/badges/downloads.svg)](https://anaconda.org/conda-forge/seawater)
 
 
 Updating seawater-feedstock
