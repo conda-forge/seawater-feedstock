@@ -1,7 +1,7 @@
 About seawater
 ==============
 
-Home: http://pypi.python.org/pypi/seawater/
+Home: https://github.com/pyoceans/python-seawater
 
 Package license: MIT
 

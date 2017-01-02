@@ -26,7 +26,7 @@ test:
     - seawater
 
 about:
-  home: http://pypi.python.org/pypi/seawater/
+  home: https://github.com/pyoceans/python-seawater
   license: MIT
   summary: 'Seawater Library for Python.'
 
