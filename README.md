@@ -5,9 +5,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/seawater-feedst
 
 Home: https://github.com/pyoceans/python-seawater
 
-Package license: MIT
+Package license: MIT AND LicenseRef-CSIRO
 
-Summary: Seawater Library for Python.
+Summary: Seawater Library for Python
 
 Current build status
 ====================
