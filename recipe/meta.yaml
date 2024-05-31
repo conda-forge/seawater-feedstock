@@ -1,4 +1,4 @@
-{% set version = "3.3.4" %}
+{% set version = "3.3.5" %}
 
 package:
   name: seawater
@@ -7,12 +7,12 @@ package:
 source:
   fn: seawater-{{ version }}.tar.gz
   url: https://github.com/pyoceans/python-seawater/archive/v{{ version }}.tar.gz
-  sha256: 8fecf37d69fbe5f2bf50855aab38f9438b44ee4195e925edfa9e544f75cfecc8
+  sha256: 79a6c2fffb917de005d6260e3be69fb20dbfb45cabc4fe42b3d300db683de67e
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -30,6 +30,10 @@ test:
 about:
   home: https://github.com/pyoceans/python-seawater
   license: MIT
+  license_file: 
+    - LICENSE.txt 
+    - LICENSE.CSIRO 
+
   summary: 'Seawater Library for Python.'
 
 extra:
