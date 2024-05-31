@@ -1,40 +1,46 @@
+{% set name = "seawater" %}
 {% set version = "3.3.5" %}
 
 package:
-  name: seawater
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: seawater-{{ version }}.tar.gz
-  url: https://github.com/pyoceans/python-seawater/archive/v{{ version }}.tar.gz
-  sha256: 79a6c2fffb917de005d6260e3be69fb20dbfb45cabc4fe42b3d300db683de67e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/seawater-{{ version }}.tar.gz
+  sha256: ed3443330d76e5054ad6e3f60ac5a1e407f703504887be9352c35a9d77fd6fa8
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
+    - python >=3.8
+    - setuptools >=42
+    - setuptools-scm
+    - wheel
     - pip
-    - python
-    - setuptools
   run:
-    - python
+    - python >=3.8
     - numpy
+    - scipy
 
 test:
   imports:
     - seawater
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/pyoceans/python-seawater
-  license: MIT
-  license_file: 
-    - LICENSE.txt 
-    - LICENSE.CSIRO 
-
-  summary: 'Seawater Library for Python.'
+  summary: Seawater Library for Python
+  license: MIT AND LicenseRef-CSIRO
+  license_file:
+    - LICENSE.txt
+    - LICENSE.CSIRO
 
 extra:
   recipe-maintainers:
